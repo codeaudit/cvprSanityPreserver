@@ -90,53 +90,6 @@ print(num_pdfs, string_search_title, ' papers in all')
             
 
 
-# In[82]:
-
-
-# '''Write pdfs to text files'''
-
-# import shutil
-
-# search_pdf_dir_name = write_file_path + string_search_title + '/pdfs/'
-# write_txt_dir_name  = write_file_path + string_search_title + '/txts/'
-
-
-
-
-# if not shutil.which('pdftotext'): # needs Python 3.3+
-#   print('ERROR: you don\'t have pdftotext installed. Install it first before calling this script')
-#   sys.exit()
-    
-    
-
-
-
-# for file in os.listdir(search_pdf_dir_name):
-#     if file.endswith(".pdf"):
-#         pdf_file_name = os.path.join(search_pdf_dir_name, file)
-#         #print(pdf_file_name)
-        
-#         file_base_name = file.split('.pdf')[0] 
-        
-#         #print(file_base_name)
-        
-#         if not os.path.exists(write_txt_dir_name):
-#             os.makedirs(write_txt_dir_name)
-        
-        
-#         write_txt_file_name = write_txt_dir_name + file_base_name + '.txt'
-#         pdf_path = pdf_file_name
-#         txt_path = write_txt_file_name
-        
-        
-                
-                
-#         cmd = "pdftotext %s %s" % (pdf_path, txt_path)
-#         os.system(cmd)
-        
-# print('Done converting pdfs to text files.')
-
-
 # In[2]:
 
 
